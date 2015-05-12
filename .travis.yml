@@ -5,3 +5,6 @@ env:
   - NODE_ENV=travis
 services:
   - mongodb
+script:
+  - grunt lint
+  - npm test
