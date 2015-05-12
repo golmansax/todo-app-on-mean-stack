@@ -1,8 +1,13 @@
+sudo: false
 language: node_js
 node_js:
   - "0.10"
 env:
   - NODE_ENV=travis
+cache:
+  directories:
+  - node_modules
+  - public/lib
 services:
   - mongodb
 script:
